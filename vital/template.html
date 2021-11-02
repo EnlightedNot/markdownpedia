@@ -47,7 +47,7 @@
         />
 
         <!-- Main Styles -->
-        <link id="style" rel="stylesheet" href="https://markdownpedia.tk/server/vital/style.css" />
+        <link id="style" rel="stylesheet" href="server/vital/style.css" />
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>
@@ -98,8 +98,13 @@
         </div>
 
         <div class="markdown">{markdown}</div>
+		<button onclick="myFunction()">Toggle dark mode</button>
 
         <script>
+			function myFunction() {
+				var element = document.body;
+				element.classList.toggle("dark-mode");
+			}
             var source = document.getElementById('icon').href.replace('markdownpedia.tk', window.location.hostname);
 
             document.getElementById('icon').href = source;

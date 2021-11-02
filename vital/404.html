@@ -47,7 +47,7 @@
         />
 
         <!-- Main Styles -->
-        <link id="style" rel="stylesheet" href="https://markdownpedia.tk/server/vital/style.css" />
+        <link id="style" rel="stylesheet" href="server/vital/style.css" />
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>
@@ -100,8 +100,13 @@
         <div class="markdown"><h1 id="404">404</h1>
 <p>That page isn't found, go to <a href="https://markdownpedia.tk">home</a>?<br />
 If this is a bug, please share it <a href="https://github.com/mamamia5x/markdownpedia/issues">here</a>.</p></div>
+		<button onclick="myFunction()">Toggle dark mode</button>
 
         <script>
+			function myFunction() {
+				var element = document.body;
+				element.classList.toggle("dark-mode");
+			}
             var source = document.getElementById('icon').href.replace('markdownpedia.tk', window.location.hostname);
 
             document.getElementById('icon').href = source;

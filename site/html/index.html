@@ -47,7 +47,7 @@
         />
 
         <!-- Main Styles -->
-        <link id="style" rel="stylesheet" href="https://markdownpedia.tk/server/vital/style.css" />
+        <link id="style" rel="stylesheet" href="server/vital/style.css" />
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>
@@ -98,7 +98,7 @@
         </div>
 
         <div class="markdown"><h1 id="markdownpedia">Markdownpedia</h1>
-<p>Hello and welcome to Markdownpedia. This site is still in development.<br />
+<p>Hello and welcome to Markdownpedia. This site is still in development.  AAAAAAAAAAAAAAAAAAAA
 This site is supposed to be like <a href="https://wikipedia.org/">Wikipedia</a>, but instead written in Markdown.  </p>
 <p>You can create and edit pages within the GitHub link, found <a href="https://github.com/mamamia5x/markdownpedia">here</a>.<br />
 The forum is <a href="https://github.com/mamamia5x/markdownpedia/discussions">here</a>.</p>
@@ -140,8 +140,13 @@ The forum is <a href="https://github.com/mamamia5x/markdownpedia/discussions">he
 </table>
 <p>This site couldn't be possible from these contributors. If you would like to help contribute, go to the <a href="https://github.com/mamamia5x/markdownpedia">GitHub</a>. </p>
 <!-- Just as a note, Markdownpedia started on January 23rd, 2021 --></div>
+		<button onclick="myFunction()">Toggle dark mode</button>
 
         <script>
+			function myFunction() {
+				var element = document.body;
+				element.classList.toggle("dark-mode");
+			}
             var source = document.getElementById('icon').href.replace('markdownpedia.tk', window.location.hostname);
 
             document.getElementById('icon').href = source;
